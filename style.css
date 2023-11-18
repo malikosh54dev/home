@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+#header {
+  padding: 30px 0 200px 0;
+}
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header a {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 50px;
+}
+#hero {
+  padding: 50px 0 70px 0;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.hero-title h1 {
+  color: var(--Dark-Color, #21243d);
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px; /* 136.364% */
+}
+.hero-title p {
+  color: var(--Dark-Color, #21243d);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 30px 0 30px 0;
+}
+.hero-title button {
+  width: 208px;
+  height: 47px;
+  border-radius: 2px;
+  background: var(--Primary, #ff6464);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+#post {
+  padding: 50px 150px;
+  background: #edf7fa;
+}
+.post {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.post-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0 30px 0;
+}
+.post-block {
+  width: 370px;
+  height: 200px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 0.25);
+  padding: 30px 30px;
+}
+.post-title h2 {
+  color: var(--Dark-Color, #21243d);
+  font-size: 22px;
+  font-weight: 400;
+}
+.post-title h5 {
+  color: var(--Secondry, #00a8cc);
+  font-size: 16px;
+  font-weight: 400;
+}
+.post-block h2 {
+  color: var(--Dark-Color, #21243d);
+  font-size: 26px;
+  font-weight: 700;
+}
+.post-block h4 {
+  color: var(--Dark-Color, #21243d);
+  font-size: 18px;
+  font-weight: 400;
+  margin: 18px 0;
+}
+.post-block p {
+  color: var(--Dark-Color, #21243d);
+  font-size: 16px;
+  font-weight: 400;
+}
+.post-block a span {
+  margin: 0 10px;
+}
+.works {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 60px;
+  margin-right: 128px;
+}
+.works-block1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.works-block1-title {
+  margin: 0 20px;
+}
+.works-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0 30px 140px;
+  color: var(--Dark-Color, #21243d);
+  font-size: 22px;
+  font-weight: 400;
+}
+.works-block1-title h1 {
+  color: var(--Dark-Color, #21243d);
+  font-size: 30px;
+  font-weight: 700;
+}
+.works-2020 {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 20px 0;
+}
+.works-2020 h4 {
+  width: 62px;
+  height: 25px;
+  border-radius: 16px;
+  background: #142850;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+}
+.works-2020 h5 {
+  color: var(--Light, #8695a4);
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 15px;
+}
+.works-block1-title p {
+  color: var(--Dark-Color, #21243d);
+  font-size: 16px;
+  font-weight: 400;
+}
+#footer {
+  padding: 150px 0;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer-icon span {
+  font-size: 40px;
+ margin: 0 20px;
+}
+.footer a{
+  margin: 20px 0;
+}
+@media (max-width:1400px) {
+  .container{
+    width: 90%;
+  }
+}
+@media (max-width:992px) {
+  .post-block h2 {
+    font-size: 17px;
+  }
+   .post-block p{
+    font-size: 13px;
+   }
+   .post-block {
+    width: 239px;
+    height: 162px;
+   }
+}
+@media (max-width:568px) {
+  .hero{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-title p {
+    font-size: 14px;
+  }
+  .post{
+    flex-direction: column;
+  }
+  .works-block1{
+    flex-direction: column;
+  }
+.works-block1-title p{
+  width: 70%;
+}
+.works-block1 img{
+ width: 60%;
+}
+}
+@media (max-width:320px){
+  .hero{
+    width: 100%;
+  }
+  .hero img{
+    width: 70%;
+  }
+  .hero-title h1 {
+    font-size: 31px;
+    line-height: 42px;
+  }
+  .hero-title button {
+    width: 195px;
+    height: 37px;
+    font-size: 19px;
+  }
+  #post {
+    padding: 50px 31px
+  }
+  #footer {
+    padding: 57px 0;
+  }
+  .footer-icon span {
+    font-size: 31px;
+    margin: -2px 15px;
+  }
+}
